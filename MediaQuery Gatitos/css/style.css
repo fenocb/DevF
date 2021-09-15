@@ -1,0 +1,79 @@
+html{
+    margin: 0px;
+    padding: 0;
+}
+figure{
+    padding: 0;
+    margin: 0;
+    width: 100%;   
+}
+figcaption{
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+.item{
+    border: 10px solid black;
+}
+
+img{
+    width: 100%;
+}
+
+
+@media screen  and (max-width: 793px){
+    
+    body{
+        background-color: rgb(179, 219, 221);
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 10px;
+    }
+    
+
+}
+
+@media screen  and (min-width: 794px)and (max-width:1197px){
+    
+    body{
+        background-color: rgb(199, 142, 226);
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+    }
+   
+}
+
+@media screen  and (min-width: 1020px){
+    
+    body{
+        background-color: rgb(202, 238, 208);
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 10px;
+    }
+    
+    
+
+   
+
+}

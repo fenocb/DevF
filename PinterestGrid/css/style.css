@@ -1,0 +1,18 @@
+.container{ 
+    background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.item{
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.sub_item{
+   background-color: powderblue;
+}

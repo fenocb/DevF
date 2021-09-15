@@ -1,0 +1,33 @@
+body{
+    width: 50%;
+}
+.main{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 10px;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.item{
+    
+    display: grid;
+    grid-template-columns: 2fr ;
+    gap: 10px;
+
+}
+.sub_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+
+img{
+    width: 100%;
+}

@@ -130,7 +130,7 @@ var numeroArreglo= [
 ]
 
 for (let index = 0; index < numeroArreglo.length; index++) {
-    if(typeof numeroArreglo[index]==typeof 1){
+    if(typeof numeroArreglo[index]==='number'){
         console.log(numeroArreglo[index]);
     }
     

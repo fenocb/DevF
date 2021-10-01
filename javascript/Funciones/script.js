@@ -1,5 +1,6 @@
 var numero1 = Number(prompt('Escribe el primer numero'));
 var numero2 = Number(prompt('Escribe el segundo numero'));
+
 console.log('Tu primer numero es', numero1);
 console.log('Tu segundo numero es',numero2);
 console.log('La suma es: ', sumar(numero1,numero2));
@@ -23,7 +24,11 @@ var jugador2 =prompt('Jugador 2 escoge tu opcion').toLowerCase();
 console.log(piedraPapelTijeras(jugador1,jugador2));
 
 function sumar(num1, num2) {
-    return num1 + num2;
+    if(Number==num1 || num2==Number){
+        return num1 + num2;   
+    }else{
+        return 'Dato invalido';
+    }
 }
 
 function restar(num1,num2) {
@@ -110,7 +115,7 @@ function arregloPares() {
 function piedraPapelTijeras(opcion1,opcion2) {
     console.log('Jugador 1:',opcion1);
     console.log('Jugador 2:',opcion2);
-    
+
     if (opcion1=='tijera') {
         if(opcion2=='papel'){
             return 'Jugador 1 gana';

@@ -5,6 +5,7 @@
 //     Crea un objeto llamado myPenguin con propiedades que representen
 //     la información listada en cada columna en esa página de wikipedia
 //     (por ejemplo: character, origin...)
+
 var myPinguin = {
     character: 'Alfred',
     origin: 'Zig et Puce',

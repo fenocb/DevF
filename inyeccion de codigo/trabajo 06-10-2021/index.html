@@ -1,0 +1,93 @@
+<!-- 
+// Challenge ------------------
+// * Usar Bootstrap *
+// Preguntar Nombre
+// Preguntar Direccion
+// Preguntar Telefono
+// Preguntar si quiren pizza con piña o  sin
+// respuestas : si -> :( esta bien || no -> Excelente :)  -> caso de error
+// -> mostrar las respuestas en una card -->
+
+<!-- //Challenge 2
+Construir un script que almacene el nombre, la edad, el email de un usuario y crear una tarjeta de identificacion con una imagen predeterminada
+y ademas crear un boton que cree la tarjeta por cada usuario
+
+//Challenge 3
+Construir un script que almacene un listado de ingredientes(5 Ingredientes) para cocinar una pizza y crear una lista de pasos a seguir para cocinar ese platillo
+y ademas crear un boton que cree los pasos a seguir(5 Pasos)
+[tomate,queso,harina,peperoni,pimienta]
+PASO 1 -> cortar los tomates
+PASO 2 -> rebanar el queso
+.............. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+              <label for="nombreCliente" class="form-label">Nombre:</label>
+              <div id="text" class="form-text">Ejemplo: Marco Gonzalez</div>
+              <input type="text" class="form-control" id="nombreCliente" >
+            </div>
+            <div class="md-3">
+              <label for="direccionCliente" class="form-label">Direccion:</label>
+              <div id="text" class="form-text">Ejemplo: Av Ricolino pizzerola</div>
+              <input type="text" class="form-control" id="direccionCliente">
+            </div>
+            <div class="md-3">
+                <label for="telefonoCliente" class="form-label">Telefono</label>
+                <div id="text" class="form-text">Ejemplo: 5544332211</div>
+                <input type="number" class="form-control" id="telefonoCliente">
+            </div>
+            <div class="md-3">
+                <label for="piñaStatus" class="form-label">¿Desea piña en su pizza?</label>
+                <div id="text" class="form-text">Ejemplo: si/no</div>
+                <input type="text" class="form-control" id="piñaStatus">
+            </div>
+            <p>Ingredientes</p>
+            <div class="md-3">
+              <label for="masaType" class="form-label">Tipo de masa</label>
+              <div id="text" class="form-text">Ejemplo: hongos/peperoni/jamon/</div>
+              <input type="text" class="form-control" id="masaType">
+            </div>
+            <div class="md-3">
+              <label for="quesoType" class="form-label">Tipo de queso</label>
+              <div id="text" class="form-text">Ejemplo: Quesillo,Mozarella,Manchego</div>
+              <input type="text" class="form-control" id="quesoType">
+            
+          </div>
+          <div class="md-3">
+            <label for="ingredienteType" class="form-label">Ingrediente Principal</label>
+            <div id="text" class="form-text">Ejemplo: hongos/peperoni/jamon/</div>
+            <input type="text" class="form-control" id="ingredienteType">
+          </div>
+          <div class="md-3">
+            <label for="tomateStatus" class="form-label">¿Desea con salsa de  tomate su pizza?</label>
+            <div id="text" class="form-text">Ejemplo: Si/No</div>
+            <input type="text" class="form-control" id="tomateStatus">
+          </div>
+        <button type="button" class="btn btn-primary" onclick="card()">Confirmar</button>
+          </form>
+    </div>
+    <div class="container">
+      <div class="contenedorTarjetas row">
+        
+      </div>
+    </div>
+    
+
+    
+</body>
+<script src="script.js"></script>
+</html>

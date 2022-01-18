@@ -1,0 +1,20 @@
+{
+  "name": "api-database-2500",
+  "version": "1.0.0",
+  "description": "Creacion de api conectado a base de datos local",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Feno Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^12.0.4",
+    "express": "^4.17.2",
+    "knex": "^1.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
+}
